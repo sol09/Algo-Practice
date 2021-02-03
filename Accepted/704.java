@@ -12,7 +12,7 @@ class Solution {
                 break;
             }
             i++;
-        }
+        } 
         
         // What is target's index?
         int index = -1;
@@ -21,4 +21,4 @@ class Solution {
         
         return index;
     }
-}
+} 
