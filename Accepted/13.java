@@ -40,7 +40,7 @@ class Solution {
             }
             i++;
         }
-        
+         
         return re;
     }
 }
