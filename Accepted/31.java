@@ -26,7 +26,7 @@ class Solution {
         while(s<e) {
             swap(nums,s++,e--);
         }
-    }
+    } 
     
     public void swap(int[] array, int n, int m) {
         int temp;
