@@ -1,4 +1,4 @@
-// 112. 
+// 112. Path Sum
 
 /**
  * Definition for a binary tree node.
