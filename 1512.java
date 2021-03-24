@@ -1,4 +1,4 @@
-// 1512.
+// 1512. Number of Good Pairs
 
 class Solution {
     public int numIdenticalPairs(int[] nums) {
