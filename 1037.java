@@ -20,7 +20,6 @@ class Solution {
             return false;
     }
 }
-
 /* 미완성. 내일 마저 풀 것. -210327- */
 
 
@@ -47,3 +46,32 @@ class Solution {
             return false;
     }
 }
+/* 틀림.. */
+
+
+// 210401
+class Solution {
+    public boolean isBoomerang(int[][] points) {
+        // 기울기를 구해서 풂
+        
+        if(inclination(points[0],points[1]) == inclination(points[0],points[2]))
+            return false;
+        else if(inclination(points[0],points[1])==998 || inclination(points[1],points[2])==998 || inclination(points[2],points[0])==998)
+            return false;
+        else
+            return true;
+    }
+    
+    public double inclination(int[] point1, int[] point2) {
+        int dx = point2[0] - point1[0];
+        int dy = point2[1] - point1[1];
+        
+        if(point1[0]==point2[0] && point1[1]==point2[1])
+            return 998;
+        if(dx==0)
+            return 999;
+        else
+            return dy/dx;
+    }
+}
+/*  */
