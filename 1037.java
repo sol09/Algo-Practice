@@ -74,4 +74,32 @@ class Solution {
             return dy/dx;
     }
 }
-/*  */
+/* 변수가 너무 많음 */
+
+
+// 210403
+class Solution {
+    public boolean isBoomerang(int[][] points) {
+        // S!=0 -> true; S==0 -> false
+        
+        // distance
+        double a = Math.sqrt(Math.pow(points[0][0]-points[1][0],2)
+                             +Math.pow(points[1][0]-points[1][1],2));
+        double b = Math.sqrt(Math.pow(points[1][0]-points[2][0],2)
+                             +Math.pow(points[1][1]-points[2][1],2));
+        double c = Math.sqrt(Math.pow(points[2][0]-points[0][0],2)
+                             +Math.pow(points[2][1]-points[0][1],1));
+        
+        // squre
+        double s = (a+b+c)/2;
+        double Square = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        
+        int sq = (int) Math.ceil(Square);
+        
+        if(sq==0)
+            return false;
+        else
+            return true;
+    }
+}
+/* [[0,1][0,1][2,1]]에서 오류남. 확인해봤을 때 0으로 나옴에도 true 반환됨. */
