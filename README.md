@@ -1,4 +1,4 @@
-# algo-death-match
+# algo-training
 since: 2021-01-29
 
 Solving one problem a day 
