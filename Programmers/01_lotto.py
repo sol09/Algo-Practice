@@ -16,4 +16,4 @@ def solution(lottos, win_nums):
         answer.append(6) 
     return answer
 
-# https://edorrr.tistory.com/40
+# https://edorrr.tistory.com/40 
