@@ -1,4 +1,4 @@
-# algo-training
+# Coding Practice
 since: 2021-01-29
 
 Solving one problem a day <br>
